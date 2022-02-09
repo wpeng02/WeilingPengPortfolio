@@ -8,48 +8,106 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="icon" 
+        type="image/png" 
+        href="Image/icon.svg">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="script.js"></script>
 </head>
 
 <body>
+
+    <div class="topnav">
+        <div id="navmenuopened" style="display: none;">
+            <div style="display: block; margin: auto;">
+                <div class="navmenu"><a href="About.html">About</a></div>
+                <div class="navmenu"><a href="Resume.html">Resume</a></div>
+                <div class="navmenu"><p>Work</p></div>
+                <div class="navmenu" id="navwork">
+                    <a href="ProductDesign.html">Product Design</a>
+                    <a href="UIUX.html">UIUX Design</a>
+                    <a href="ConceptArt.html">Concept Art</a>
+                    <a href="Illustration.html">Illustration</a>
+                </div>
+            </div>
+        </div>
+        <span id="mobilemenu">
+            <svg width="30" height="30">
+                <path d="M0, 5 30,5" stroke="#999999" stroke-width="5"/>
+                <path d="M0, 14 30,14" stroke="#999999" stroke-width="5"/>
+                <path d="M0, 23 30,23" stroke="#999999" stroke-width="5"/>	
+            </svg>          
+        </span>
+        <div id="WP">   
+            <a href="index.html">
+                <svg height="50" stroke="#008b8b" stroke-width="0.8" class="text-line" width="100%">
+                    <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
+                        Weiling Peng
+                    </text>
+                </svg>
+            </a>
+        </div> 
+    </div>
+
     <div class="sidebar">
         <div class="sidebarelement" id="WP">
-            <a href="#homepage">Weiling Peng</a>
+            <a href="index.html">
+                <svg height="100" stroke="#008b8b" stroke-width="1.2" class="text-line" width="100%">
+                    <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
+                        Weiling Peng
+                    </text>
+                </svg>
+            </a>
         </div>
         <div class="sidebarelement" id="intro">
-            <div class="introline" id="L1">
-                <div><p>A</p></div>
-                <div  class="switch" id="switch1"><p>Product Designer</p></div>
+            <div class="introline">
+                <div><p>I am a</p></div>
             </div>
-            <div class="introline" id="L2">
-                <p>creates playful experiences</p>
-                <p>that deliver</p>
+            <div class="introline">
+                <div class="switch" id="switch1"><p>Product Designer</p></div>
             </div>
-            <div class="introline" id="L3">
+            <div class="introline">
+                <p>who creates</p>
+            </div>
+            <div class="introline">
                 <div class="switch" id="switch2"><p>Suprising</p></div>
-                <div><p>moments.</p></div>
+            </div>
+            <div class="introline">
+                <div><p>moments</p></div>
             </div>
         </div>
         <div class="sidebarelement" id="menu">
-            <div id="About"><a href="#Aboutme">About</a></div>
-            <div id="Resume"><a href="#Resume"onclick="window.open('WeilingPengResume.pdf', 'fullscreen=yes'); return false;">Resume</a></div>
+            <div id="About"><a href="About.html">About</a></div>
+            <div id="Resume"><a href="Resume.html">Resume</a></div>
             <div id="work"><a>Work</a></div>
             <div id="workmenu">
-                <p>Product Design</p>
-                <p>UIUX Design</p>
-                <p>Concept Art</p>
-                <p>Illustration</p>
+                <a href="ProductDesign.html">Product Design</a>
+                <a href="UIUX.html">UIUX Design</a>
+                <a href="ConceptArt.html">Concept Art</a>
+                <a href="Illustration.html">Illustration</a>
             </div>
         </div>
     </div>
 
-    <div id="main">
+    <div class="main" id="indexmain">
+        <div class="hiddenintro">
+            <div class="introline">
+                <p>I am a</p>
+                <div class="switch" id="switch3"><p>Product Designer</p></div>
+            </div>
+            <div class="introline">
+                <p>who creates</p>
+                <div class="switch" id="switch4"><p>Suprising</p></div>
+                <p>moments</p>
+            </div>
+        </div>
+        
         <div id="Projectimg">
-            <img src="Image/pic3.jpg">
+            <img id=pi src="Image/pic3.jpg">
         </div>
         <div id="ProjectName">
             <p>

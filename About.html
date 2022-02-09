@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weiling Peng Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="icon" 
+        type="image/png" 
+        href="Image/icon.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <div id="navmenuopened" style="display: none;">
+            <div style="display: block; margin: auto;">
+                <div class="navmenu"><a href="About.html">About</a></div>
+                <div class="navmenu"><a href="Resume.html">Resume</a></div>
+                <div class="navmenu"><p>Work</p></div>
+                <div class="navmenu" id="navwork">
+                    <a href="ProductDesign.html">Product Design</a>
+                    <a href="UIUX.html">UIUX Design</a>
+                    <a href="ConceptArt.html">Concept Art</a>
+                    <a href="Illustration.html">Illustration</a>
+                </div>
+            </div>
+        </div>
+        <span id="mobilemenu">
+            <svg width="30" height="30">
+                <path d="M0, 5 30,5" stroke="#999999" stroke-width="5"/>
+                <path d="M0, 14 30,14" stroke="#999999" stroke-width="5"/>
+                <path d="M0, 23 30,23" stroke="#999999" stroke-width="5"/>	
+            </svg>          
+        </span>
+        <div id="WP">   
+            <a href="index.html">
+                <svg height="50" stroke="#008b8b" stroke-width="0.8" class="text-line" width="100%">
+                    <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
+                        Weiling Peng
+                    </text>
+                </svg>
+            </a>
+        </div> 
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebarelement" id="WP">
+            <a href="index.html">
+                <svg height="100" stroke="#008b8b" stroke-width="1.2" class="text-line" width="100%">
+                    <text x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
+                        Weiling Peng
+                    </text>
+                </svg>
+            </a>
+        </div>
+        <div class="sidebarelement" id="intro">
+            <div class="introline">
+                <div><p>I am a</p></div>
+            </div>
+            <div class="introline">
+                <div class="switch" id="switch1"><p>Product Designer</p></div>
+            </div>
+            <div class="introline">
+                <p>who creates</p>
+            </div>
+            <div class="introline">
+                <div class="switch" id="switch2"><p>Suprising</p></div>
+            </div>
+            <div class="introline">
+                <div><p>moments</p></div>
+            </div>
+        </div>
+        <div class="sidebarelement" id="menu">
+            <div id="About" style="font-weight: bold;"><a href="About.html">About</a></div>
+            <div id="Resume"><a href="Resume.html">Resume</a></div>
+            <div id="work"><a>Work</a></div>
+            <div id="workmenu">
+                <a href="ProductDesign.html">Product Design</a>
+                <a href="UIUX.html">UIUX Design</a>
+                <a href="ConceptArt.html">Concept Art</a>
+                <a href="Illustration.html">Illustration</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="aboutmain">
+        <h1 class="pagetitile" id="titleabout">
+            About Me
+        </h1>
+        <div class="container" id="aboutcontainer">
+            <div class="elfsight-app-27de66ed-f7be-4069-b79a-cf503856ff4f"></div>
+            
+            <div id="box1">
+                <div class="front"> 
+                    <img class="myphoto" src="Image/myphoto.jpg" alt="myphoto">
+                </div> 
+                <div class="back">
+                    <img class="myphoto" src="Image/myphoto2.jpg" alt="myphoto">
+                    <div class="eyes">
+                        <div id="eye1">
+                            <div class="ball"></div>
+                        </div>
+                        <div id="eye2">
+                            <div class="ball"></div>
+                        </div>
+                    </div>
+                  </div> 
+            </div>
+            
+            <div id="box2">
+                <p>I’m Weiling Peng, a designer and illustrator from Nanjing, China. I’m currently pursuing a BFA in Industrial Design and Illustration at the Rhode Island School of Design. My areas of interest include play product design and concept art.</p>
+                <br>
+                <p>I believe in the power of play. It makes possible a level of engagement which in turn makes possible the experience of flow, that heightened sense of being. As a gamer, I most enjoy the small delightful moments in my play experience: figuring out a clever way to accomplish a difficult task, gaining a spectacular view when I climb to the highest point, experiencing a thought-provoking moment in the narrative, and noticing an “EasterEgg” design detail. So as a designer, I set out to create experiences of heightened play, creating moments of surprise and delight for users.                
+                <br><br><br>
+                <p>Email: weilingpeng99@gmail.com</p>
+            </div>
+        
+        </div>
+
+    </div>
+</body>
+</html>
