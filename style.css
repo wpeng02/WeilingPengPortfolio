@@ -607,7 +607,7 @@ body::-webkit-scrollbar {
 
 #savory{
     height: 40vw;
-    background-image: url(Image/savorybg.png); 
+    background-image: url(Image/Product/Tamar/savorybg.png); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -616,7 +616,7 @@ body::-webkit-scrollbar {
 
 #sweet{
     height: 40vw;
-    background-image: url(Image/sweetbg.png);
+    background-image: url(Image/Product/Tamar/sweetbg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
