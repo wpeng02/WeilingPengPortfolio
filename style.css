@@ -262,6 +262,7 @@ body::-webkit-scrollbar {
     font-size: 45px;
     font-weight: bold;
     transition: 0.3s;
+    z-index: 1;
   }
   
 .close:hover,
@@ -465,6 +466,7 @@ body::-webkit-scrollbar {
 }
 
 .section{
+    width: 100%;
     padding-top: 5%;
     display: flex;
     align-items: center;
@@ -509,12 +511,30 @@ body::-webkit-scrollbar {
     width: 60%;
 }
 
+.column4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
 
-.imgcontainer{
+
+.imgcontainer,
+.twoimgcontainer{
+    width: 100%;
     display: flex;
     object-fit: cover;
     align-items: center;
     justify-content: center;
+}
+
+.twoimgcontainer img{
+    width: 50%;
+}
+
+.column4 img{
+    width: 100%;
 }
 
 .paragraph{
@@ -531,6 +551,14 @@ body::-webkit-scrollbar {
 .paragraphcontent{
     padding: 20px;
     width: 80%;
+}
+
+.paragraphfullline{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .end img{
@@ -577,7 +605,101 @@ body::-webkit-scrollbar {
      margin: auto;
 }
 
+#savory{
+    height: 40vw;
+    background-image: url(Image/savorybg.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    justify-content: center;
+}
 
+#sweet{
+    height: 40vw;
+    background-image: url(Image/sweetbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    justify-content: center;
+ }
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.2);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
 
 @media screen and (max-width: 991px) {
     .sidebar {
@@ -728,6 +850,18 @@ body::-webkit-scrollbar {
         margin: auto;
     }
 
+    .twoimgcontainer{
+        flex-direction: column;
+    }
+
+    .twoimgcontainer img{
+        width: 100%;
+    }
+
+    .column4{
+        width: 100%;
+    }
+
     .titlecolumn{
         width: 100%;
         padding: 0;
@@ -773,5 +907,10 @@ body::-webkit-scrollbar {
     
     .projectp{
         font-size: 18px;
+    }
+
+    #savory,
+    #sweet{
+        height: 80vw;
     }
 }
