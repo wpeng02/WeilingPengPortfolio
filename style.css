@@ -467,7 +467,8 @@ body::-webkit-scrollbar {
 }
 
 .section,
-.section2{
+.section2,
+.section3{
     flex-direction: row;
     padding-top: 2%;
     display: flex;
@@ -477,6 +478,10 @@ body::-webkit-scrollbar {
 
 .section{
     width: 100%;
+}
+
+.section3{
+    width: 85%;
 }
 
 .section2{
@@ -886,7 +891,8 @@ body::-webkit-scrollbar {
     }
 
     .section,
-    .section2{
+    .section2,
+    .section3{
         width: 100%;
         padding-top: 2%;
         flex-direction: column;
