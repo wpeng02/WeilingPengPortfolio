@@ -539,7 +539,8 @@ body::-webkit-scrollbar {
 
 
 .imgcontainer,
-.twoimgcontainer{
+.twoimgcontainer,
+.threeimgcontainer{
     width: 100%;
     display: flex;
     object-fit: cover;
@@ -549,6 +550,10 @@ body::-webkit-scrollbar {
 
 .twoimgcontainer img{
     width: 50%;
+}
+
+.threeimgcontainer img{
+    width: 33.3%;
 }
 
 .column4 img{
@@ -932,4 +937,14 @@ body::-webkit-scrollbar {
     #sweet{
         height: 80vw;
     }
+
+    .threeimgcontainer{
+        flex-direction: column;
+    }
+
+    .threeimgcontainer img{
+        width: 100%;
+        height: auto;
+    }
+
 }
