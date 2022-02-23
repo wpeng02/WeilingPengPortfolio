@@ -135,6 +135,13 @@ $(document).ready(function(){
       });
     });
 
+    $("#Kraken").click(function(){
+      $("#Krakenseries").css({'display':'block'});
+      $(".close").click(function(){
+        $("#Krakenseries").css({'display':'none'});
+      });
+    });
+
     var modal = document.getElementById('modalsingular');
     var span = document.getElementsByClassName("close")[0];
     span.onclick = function(){ 
