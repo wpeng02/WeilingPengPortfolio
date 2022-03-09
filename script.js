@@ -60,46 +60,6 @@ $(document).ready(function(){
       }
     }
 
-    $("#box1").flip();
-
-    var balls = document.getElementsByClassName("ball");
-    document.onmousemove = function(){
-        var x = event.clientX * 100 / window.innerWidth + "%";
-        var y = event.clientY * 100 / window.innerHeight + "%";
-
-        for(var i=0; i<2; i++){
-            balls[i].style.left = x;
-            balls[i].style.top = y;
-            balls[i].style.transform = "translate(-"+x+",-"+y+")";
-        }
-    }
-
-    anime({
-        targets: '#wplinedrawing path',
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: 'easeInSine',
-        duration: 1000,
-        direction: 'alternate',
-        loop: false,
-      });
-
-
-    var i=0
-    setInterval(function(){
-        i++;
-     $("#pi").attr("src", "Image/pic"+i+".jpg");
-    if(i==1){
-        $("#ProjectName").html("<p>Smart Dorm: An Energy-saving Automation Dorm System</p>")
-    }
-    if(i==2){
-        $("#ProjectName").html("<p>Tamar:Tamarind Sauce Sphere</p>")
-    }
-    if(i==3){
-        $("#ProjectName").html("<p>WindowSill: A Bird Watching Mobile Game</p>")
-        i=0;
-     }
-    },5000);
-
     $("#Uncanny").click(function(){
       $("#UncannySeries").css({'display':'block'});
       $(".close").click(function(){

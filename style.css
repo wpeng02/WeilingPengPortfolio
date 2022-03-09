@@ -663,6 +663,12 @@ body::-webkit-scrollbar {
     margin: auto;
   }
 
+  .slideshow-container2 {
+    max-width: 85%;
+    position: relative;
+    margin: auto;
+  }
+
   .mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
   
   /* Next & previous buttons */
